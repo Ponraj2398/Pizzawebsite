@@ -1,0 +1,856 @@
+/* --------------------------------------------------------- Common Styles -------------------------------------------------------------------------------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-primary: #6c63ff;
+    --color-success: #00bf8e;
+    --color-warning: #f7c94b;
+    --color-danger: #f75842;
+    --color-danger-variant: rgba(247, 88, 66, 0.4);
+    --color-white: #fff;
+    --color-light: rgba(255, 255, 255, 0.7);
+    --color-black: #000;
+    --color-bg: #1f2641;
+    --color-bg1: #2e3267;
+    --color-bg2: #424890;
+    --container-width-lg: 76%;
+    --container-width-md: 90%;
+    --container-width-sm: 94%;
+    --transition: all 400ms ease;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    /* font-family: 'Poppins', sans-serif; */
+    /* position: relative; */
+}
+
+
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx Header Section Start xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+
+.header {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 99;
+    box-shadow: 2px 2px 5px #000;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.header {
+    animation: 2s ease-out slideInLeft;
+}
+
+@keyframes slideInLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+
+#main .header-scrolled {
+    top: 0;
+    background: rgba(0, 0, 0, 0.9);
+    border-bottom: 6px solid #37332a;
+}
+
+#chk1 {
+    display: none;
+}
+
+.ul i {
+    color: #fff;
+    font-size: 20px;
+    background: linear-gradient(to left, blue, grey, orange, violet, red);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    cursor: pointer;
+}
+
+.carousel-item h1 .pizza {
+    background: linear-gradient(to left, blue, grey, orange, violet, red);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.carousel-item h3 .pizza {
+    background: linear-gradient(to left, blue, grey, orange, violet, red);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.caros-btn {
+    position: absolute;
+    margin-bottom: 0px;
+}
+
+.button:hover {
+    background-color: #CDA45E;
+}
+
+.button {
+    width: 200px;
+}
+
+.extra .button {
+    width: 110px !important;
+}
+
+.header .logo {
+    flex: 1;
+    margin-left: 50px;
+    font-size: 15px;
+    background: linear-gradient(to left, blue, grey, orange, violet, red);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+@media screen and (max-width:420px) {
+    .header .pizzon {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width:580px) {
+    .logo .pizzon {
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (min-width:1000px) {
+    .logo .pizzon {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width:645px) {
+    .logo .pizzon {
+        font-size: 1.5rem;
+    }
+}
+
+.header .search-box {
+    flex: 1;
+    position: relative;
+}
+
+.search-box input {
+    width: 100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    background: #f2f2f2;
+    border-radius: 30px;
+    color: gray;
+    font-size: 16px;
+    text-align: center;
+    padding-left: 5px;
+    padding-right: 40px;
+}
+
+.search-box button {
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border-radius: 30px;
+    border: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: scale(0.9);
+}
+
+.header ul {
+    flex: 3;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+header ul li {
+    list-style: none;
+}
+
+.header ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 10px 15px;
+}
+
+.header .menus {
+    font-size: 20px;
+    display: none;
+}
+
+#insta:hover {
+    color: red;
+}
+
+#facebook:hover {
+    color: #23b4e0 !important;
+}
+
+#twitter:hover {
+    color: white !important;
+}
+
+.welcome {
+    font-size: 55px;
+}
+
+/* ------------------------------------------------------------ Media Query for header search-box --------------------------------------------------------------------- */
+
+@media(max-width:1000px) {
+    .search-box button {
+        position: absolute;
+    }
+
+    .header ul {
+        position: fixed;
+        top: 54px;
+        right: -100%;
+        background: rgba(0, 0, 0, 0.5);
+        height: calc(100vh - 100px);
+        width: 50%;
+        flex-direction: column;
+        align-items: center;
+        transition: right 0.5s linear;
+    }
+
+    .header .menus {
+        display: block;
+        width: 100px;
+        text-align: center;
+    }
+
+    #chk1:checked~ul {
+        right: 0;
+    }
+}
+
+@media(max-width:600px) {
+    .header .logo {
+        font-size: 4px;
+        margin-left: 8px;
+        align-items: center;
+    }
+
+    .header ul {
+        width: 100%;
+    }
+}
+
+/* ------------------------------------------------------------------ Media Query for carousel image ------------------------------------------------------------------ */
+
+@media screen and (orientation: landscape) {
+    .carousel img {
+        height: 100vh;
+    }
+}
+
+@media screen and (orientation: portrait) {
+    .carousel img {
+        height: 50vh;
+    }
+
+    .carousel img {
+        background-size: cover;
+        background-position: center;
+        border: none;
+    }
+}
+
+/* -------------------------------------------------------------------- Navbar underline code style ------------------------------------------------------------------- */
+
+ul li a:hover {
+    color: #34CDE8 !important;
+}
+
+ul .header-list::after {
+    content: '';
+    display: block;
+    height: 2px;
+    transform: scaleX(0);
+    transition: transform 1s ease;
+}
+
+ul .header-list:hover::after {
+    background-color: #F85A40;
+    transform: scaleX(0.8);
+}
+
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx Header Section End xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+
+
+/* ------------------------------------------------------------------- About Section Style ---------------------------------------------------------------------------- */
+
+#about {
+    background: url('main.jpg') center center;
+    background-size: cover;
+    position: relative;
+    padding: 80px 0px;
+}
+
+.about:before {
+    content: "";
+    background: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+section {
+    overflow: hidden;
+}
+
+.about .about-img {
+    position: relative;
+    transition: all .4s ease-in;
+}
+
+.about .about-img:hover {
+    transform: scale(1.03);
+}
+
+.about .about-img::before {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    width: 60px;
+    height: 60px;
+    z-index: 1;
+    content: '';
+    border-left: 5px solid #ddb813;
+    border-top: 5px solid #171106;
+    transition: .5s;
+}
+
+.about .about-img::after {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    width: 60px;
+    height: 60px;
+    z-index: 2;
+    content: '';
+    border-right: 5px solid #0c0c03;
+    border-bottom: 5px solid #ddb813;
+    transition: .5s;
+}
+
+.about-para .about-para-icon {
+    color: #00bf8e;
+}
+
+/* ------------------------------------------------------------- Our Speciality styles ------------------------------------------------------------------------------- */
+
+
+.our-special-img:hover {
+    transform: scale(1.10);
+    transition: transform .3s ease-in-out;
+}
+
+.special-text {
+    color: black;
+}
+
+.special-text:hover {
+    color: #ddb813;
+}
+
+.special {
+    transition: all .5s ease;
+}
+
+.count {
+    animation: count 1s ease-out 1;
+}
+
+@keyframes count {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* --------------------------------------------------------- Order Section ------------------------------------------------------------------------------------------- */
+
+.order-section .order-title {
+    font-weight: 700;
+    color: #121619;
+    padding-top: 10px;
+}
+
+.order-section {
+    background: #fd9d3e;
+    position: relative;
+}
+
+.order-section .order-img {
+    transition: all 400ms ease;
+}
+
+.view {
+    background: transparent;
+}
+
+.view:hover {
+    background-color: #fd9d3e;
+    color: white;
+    transition: all .3s ease;
+}
+
+/* ----------------------------------------------------------------- Special Menu style ------------------------------------------------------------------------------- */
+
+.btn-container {
+    margin-bottom: 4rem;
+    display: flex;
+    justify-content: center;
+}
+
+.filter-btn:hover {
+    color: aquamarine;
+    background: black;
+    border-right: 25px solid #fd9d3e;
+    border-left: 25px solid #fd9d3e;
+    transition: all .3s ease-in;
+    /* animation: animation_flipInX; */
+    /* animation-duration: 2s; */
+}
+
+.filter-btn {
+    text-align: center;
+    /* margin-right: 40px; */
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    width: 160px;
+    color: #fd9d3e;
+    cursor: pointer;
+    background: transparent;
+    margin: 0px 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 2px;
+}
+
+.section-center {
+    /* width: 90vw; */
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-items: center;
+    /* margin: 0px auto; */
+    /* gap: 3px; */
+}
+
+.menu-item {
+    display: grid;
+}
+
+@media screen and (max-width: 1200px) {
+    .menu-image {
+        height: 150px;
+        width: 100%;
+    }
+}
+
+.menu-image {
+    width: 200px;
+    height: 200px;
+    transition: all 400ms ease;
+}
+
+.item-info header {
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+}
+
+.price {
+    color: #fff;
+}
+
+
+
+/* ---------------------------------------------------------- navtabsworknstyles ------------------------------------------------------------------------- */
+.btn-container {
+    margin-bottom: 4rem;
+    display: flex;
+    justify-content: center;
+}
+
+.filter-btn:hover {
+    color: aquamarine;
+    background: black;
+    border-right: 25px solid #fd9d3e;
+    border-left: 25px solid #fd9d3e;
+    transition: all .3s ease-in;
+    /* animation: animation_flipInX; */
+    /* animation-duration: 2s; */
+}
+
+.filter-btn {
+    text-align: center;
+    /* margin-right: 40px; */
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    width: 160px;
+    color: #fd9d3e;
+    cursor: pointer;
+    background: transparent;
+    margin: 0px 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 2px;
+}
+
+.section-center {
+    /* width: 90vw; */
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-items: center;
+    /* margin: 0px auto; */
+    /* gap: 3px; */
+}
+
+.menu-item {
+    display: grid;
+}
+
+@media screen and (max-width: 1200px) {
+    .menu-image {
+        height: 150px;
+        width: 100%;
+    }
+}
+
+.menu-image {
+    width: 200px;
+    height: 200px;
+    transition: all 400ms ease;
+}
+
+.item-info header {
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+}
+
+.price {
+    color: #fff;
+}
+
+
+
+/* ---------------------------------------------------------- navtabsworknstyles ------------------------------------------------------------------------- */
+.menu {
+    background: #121619;
+    position: relative;
+    /* padding-bottom: 120px; */
+    border: none;
+}
+
+@media screen and (max-width:560px) {
+    .menu-top-bg {
+        margin-top: -10px;
+    }
+}
+
+.special-tab {
+    border: none;
+}
+
+.special-tab .btn-container {
+    background: #2b2c2d;
+    display: inline-block;
+    border-radius: 50px;
+}
+
+@media (max-width: 480px) {
+    .special-tab .btn-container {
+        background: transparent;
+    }
+}
+
+.nav {
+    /* display: flex; */
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+
+.special-tab ul li {
+    display: inline-block;
+}
+
+/* -------------------------- Navbar Panel styles------------------ */
+
+.our-menu-panel {
+    padding-top: 20px;
+}
+
+.fade {
+    transition: opacity .15s linear;
+}
+
+.our-menu-panel .menu-box {
+    padding-top: 50px;
+}
+
+@media (max-width: 767px) {
+    .our-menu-panel .menu-box {
+        padding-top: 25px;
+    }
+}
+
+@media (max-width: 767px) {
+    .special-tab .nav-tabs li a {
+        padding: 5px 15px;
+        font-size: 13px;
+        margin-bottom: 5px;
+    }
+}
+
+@media (max-width: 991px) {
+    .our-menu-panel {
+        padding-top: 0px;
+    }
+}
+
+.menu-image {
+    /* width: 200px; */
+    /* height: 200px; */
+    overflow: visible;
+    margin: 0 auto;
+    position: relative;
+    transition: all 400ms ease;
+    overflow: visible;
+    top: 0;
+}
+
+.menu-image:hover {
+    transform: translateY(-20px);
+    transition: transform .4s ease;
+}
+
+.menu-image {
+    width: 200px;
+    height: 200px;
+    transition: all 400ms ease;
+}
+
+
+@media (max-width: 991px) {
+    .our-menu-panel {
+        padding-top: 0px;
+    }
+}
+
+/* ----------------------------------------------------------- Book online styles  ------------------------------------------------------------------------------------ */
+
+.online-call {
+    font-size: 20px;
+    /* width: 320px; */
+    border: 2px solid #fd9d3e;
+    border-radius: 5px;
+    border-bottom: 10px solid #fd9d3e;
+    border-top: 10px solid #fd9d3e;
+    border-left: 10px solid #fd9d3e;
+    border-right: 10px solid #fd9d3e;
+}
+
+@media screen and (max-width:600px) {
+    .online-call {
+        font-size: 8px;
+    }
+
+    .online-call img {
+        width: 30px;
+
+    }
+}
+
+/* ------------------------------------------------- Form Styles ----------------------------------------------------------------------------------------------------- */
+@media (max-width: 991px) {
+    .form-group {
+        margin-bottom: 20px;
+    }
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    font-weight: 400;
+    line-height: 1.5;
+    background-color: #fff;
+    background-clip: padding-box;
+    -moz-appearance: none;
+    appearance: none;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.form-control {
+    font-size: 14px;
+    color: #999999;
+    border: 1px solid #999999;
+    border-radius: unset;
+}
+
+.select-box {
+    position: relative;
+    display: inline-block;
+    user-select: none;
+    width: 100%;
+}
+
+.book-btn {
+    color: #fff;
+    font-weight: 700;
+    background: #121619;
+    /* border: 1px solid #121619; */
+    padding: 17px 41px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 50px;
+}
+
+.book-btn:hover {
+    background-color: #fd9d3e;
+    border: none;
+}
+
+@media screen and (max-width:400px) {
+    .book-btn {
+        padding: 10px;
+        font-size: 15px;
+    }
+}
+
+/* --------------------------------------------------------- Customer review ----------------------------------------------------------------------------------------- */
+
+.customer-review {
+    background: #121619;
+    position: relative;
+    overflow: hidden;
+}
+
+.headding-part .headding-sub {
+    /* font-size: 30px; */
+    color: #fd9d3e;
+    font-family: 'Pacifico', cursive;
+    padding-bottom: 10px;
+}
+
+.customer .headding-part h2 {
+    color: #fff;
+}
+
+@media (max-width: 767px) {
+    .headding-part .headding-title {
+        font-size: 30px;
+        line-height: 30px;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .caros {
+        overflow: visible;
+        margin-left: 130px;
+        height: 500px;
+        width: 40vh;
+    }
+
+    .caros-item {
+        height: 30vh;
+    }
+}
+
+.cust-box:hover {
+    animation: wobble;
+    animation-duration: 2s;
+}
+
+/* ------------------------------------------------------------------- Footer Styles --------------------------------------------------------------------------------- */
+
+.footer h1 {
+    background: linear-gradient(to left, blue, grey, orange, violet);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.footer {
+    background: #121619;
+}
+
+.foot-icon {
+    border: none;
+    background-color: grey;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+.foot-i {
+    padding: 10px;
+}
+
+/* ------------------  Animation for Welcome --------- */
+.carousel-caption h1 {
+    overflow: hidden;
+    white-space: nowrap;
+    border: none;
+    letter-spacing: .17em;
+    margin: 0 auto;
+    animation: typing 4.5s steps(30, end) infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
+}
+.foot-content:hover{
+    color:#fd9d3e;
+}

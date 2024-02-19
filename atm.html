@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <label for="">Enter amount :</label>
+        <input type="text" name="" id="amt">
+        <button class="mybut" id="btn1" onclick="deposit()">DEPOSIT</button>
+        <button class="mybut" id="btn1" onclick="widhraw()">WIDHRAW</button>
+        <h2 id="h2"></h2>
+    </div>
+    <script>
+        function deposit() {
+            let mybal = 1000;
+            let enteramount = parseFloat(document.getElementById("amt").value)
+            let dep;
+            dep = mybal + enteramount;
+            document.getElementById("h2").innerHTML = dep;
+        }
+        function widhraw() {
+        let mybal = 1000;
+        let enteramount = parseFloat(document.getElementById("amt").value);
+        
+        if (enteramount > mybal) {
+            document.getElementById("h2").innerHTML = "Please note this entered amount should be less than or equal to the current balance";
+        } else {
+            let withdrawal = mybal - enteramount;
+            document.getElementById("h2").innerHTML = withdrawal;
+        }
+    }
+    </script>
+</body>
+
+</html>

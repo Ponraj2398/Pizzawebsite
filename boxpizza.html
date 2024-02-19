@@ -1,0 +1,1010 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Pizza</title>
+    <link rel="shortcut icon" href="menu-1.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="boxpizza.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css">
+    <!-- For Animation -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+<body>
+    <div class="fixed-top d-flex align-items-center header-scrolled header" id="header">
+        <input type="checkbox" id="chk1">
+        <div class="logo align-self-center">
+            <h1 style="font-family:Verdana, Geneva, Tahoma, sans-serif" class="pizzon text-center"><strong><i>BOX
+                        PIZZA</i></strong></h1>
+        </div>
+        <div class="search-box">
+            <form action="">
+                <input type="text" class="bg-transparent border text-light" name="search" id="srch"
+                    placeholder="Search">
+                <button type="submit" class="bg-transparent"><i class="bi bi-search text-warning"></i></button>
+            </form>
+        </div>
+        <ul class="mt-3 ul">
+            <li class="header-list"><a class="active" href="#">Home</a></li>
+            <li class="header-list"><a href="#about-us">About</a></li>
+            <li class="header-list"><a href="#footer">Contact</a></li>
+            <li class="header-list"><a href="#customer-review">Reviews</a></li>
+            <li class="header-icons">
+                <a href=""><i class="bi bi-facebook" id="facebook"></i></a>
+                <a href=""><i class="bi bi-twitter-x" id="twitter"></i></a>
+                <a href=""><i class="bi bi-instagram" id="insta"></i></a>
+            </li>
+        </ul>
+        <div class="menus text-light">
+            <label for="chk1"><i class="bi bi-list fs-1"></i></label>
+        </div>
+    </div>
+    <div id="carouselExampleCaptions" class="carousel slide carousel-fade" class="aos-animate" data-aos="fade-up">
+        <div class="carousel-indicators caros-btn d-none d-sm-block text-center">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="carospizza2.jpg" class="d-block w-100" alt="...">
+                <div
+                    class="carousel-caption d-flex flex-column h-100 w-75 align-items-center justify-content-center text-center">
+                    <h1 class="text-light welcome d-none d-sm-block mt-5">Welcome to <span class="pizza"><i>BOX
+                                PIZZA</i></span></h1>
+                    <p class="d-none d-sm-block fs-2 animate__animated animate__backInLeft">Hurry! Let's Book a table</p>
+                    <!-- <p clss="front-para d-sm-block d-none fs-1">Delivering great food for more than 5 years!</p><br> -->
+                    <div class="gap-1 d-none d-sm-flex">
+                        <a href="orderpage.html" class="btn button rounded-pill animate__animated animate__backInLeft"
+                            style="color:white;border:2px solid #CDA45E;">Order
+                            Now</a>
+                        <a href="#book-online" class="btn button rounded-pill animate__animated animate__backInRight"
+                            style="color:white;border:2px solid #CDA45E;">Book
+                            Table</a>
+                    </div>
+                    <div class="d-block d-sm-none h-25 mt-1">
+                        <h3 class="welcome1 animate__heartBeat" style="font-size: 25px;">Welcome to <span
+                                class="pizza"><i>BOX PIZZA</i></span></h3>
+                        <p class="d-block d-sm-none fs-6 animate__animated animate__backInLeft">Hurry! Let's Book a table</p>
+                        <div class="gap-1 d-flex d-sm-none text-center align-items-center justify-content-center extra">
+                            <a href="orderpage.html" class="btn button rounded-pill animate__animated animate__backInLeft"
+                                style="color:white;border:2px solid #CDA45E;">Order Now</a>
+                            <a href="#book-online" class="btn button rounded-pill animate__animated animate__backInRight"
+                                style="color:white;border:2px solid #CDA45E;">Book Table</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="carospizza.jpg" class="d-block w-100" alt="...">
+                <div
+                    class="carousel-caption d-flex flex-column h-100 w-75 align-items-center justify-content-center py-5">
+                    <h1 class="text-light welcome d-none d-sm-block mt-5 animate__heartBeat">Welcome to <span
+                            class="pizza fs-sm-6"><i>BOX
+                                PIZZA</i></span></h1>
+                    <p class="d-none d-sm-block fs-2 animate__animated animate__backInLeft">Hurry! Let's Book a table</p>
+                    <!-- <p clss="front-para d-sm-block d-none fs-1">Delivering great food for more than 5 years!</p><br> -->
+                    <div class="gap-1 d-none d-sm-flex">
+                        <a href="orderpage.html" class="btn button rounded-pill animate__animated animate__backInLeft"
+                            style="color:white;border:2px solid #CDA45E;">Order
+                            Now</a>
+                        <a href="#book-online" class="btn button rounded-pill animate__animated animate__backInRight"
+                            style="color:white;border:2px solid #CDA45E;">Book
+                            Table</a>
+                    </div>
+                    <div class="d-block d-sm-none h-25 mt-1">
+                        <h3 class="welcome1 animate__heartBeat" style="font-size: 25px;">Welcome to <span
+                                class="pizza"><i>BOX PIZZA</i></span></h3>
+                        <p class="d-block d-sm-none fs-6 animate__animated animate__backInLeft">Hurry! Let's Book a table</p>
+                        <div class="gap-1 d-flex d-sm-none text-center align-items-center justify-content-center extra">
+                            <a href="orderpage.html" class="btn button rounded-pill animate__animated animate__backInLeft"
+                                style="color:white;border:2px solid #CDA45E;">Order Now</a>
+                            <a href="#book-online" class="btn button rounded-pill animate__animated animate__backInRight"
+                                style="color:white;border:2px solid #CDA45E;">Book Table</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="onlineimg1.jpg" class="d-block w-100" alt="...">
+                <div
+                    class="carousel-caption d-flex flex-column h-100 w-75 align-items-center justify-content-center py-5">
+                    <h1 class="text-light welcome d-none d-sm-block mt-5 animate__heartBeat">Welcome to <span
+                            class="pizza fs-sm-6"><i>BOX
+                                PIZZA</i></span></h1>
+                    <p class="d-none d-sm-block fs-2 animate__animated animate__backInLeft">Hurry! Let's Book a table</p>
+                    <!-- <p clss="d-sm-block d-none">Delivering great food for more than 5 years!</p><br> -->
+                    <div class="gap-1 d-none d-sm-flex">
+                        <a href="orderpage.html" class="btn button rounded-pill animate__animated animate__backInLeft"
+                            style="color:white;border:2px solid #CDA45E;">Order
+                            Now</a>
+                        <a href="#book-online" class="btn button rounded-pill animate__animated animate__backInRight"
+                            style="color:white;border:2px solid #CDA45E;">Book
+                            Table</a>
+                    </div>
+                    <div class="d-block d-sm-none h-25 mt-1 animate__heartBeat">
+                        <h3 class="welcome1" style="font-size: 25px;">Welcome to <span class="pizza"><i>BOX
+                                    PIZZA</i></span></h3>
+                        <p class="d-block d-sm-none fs-6 animate__animated animate__backInLeft">Hurry! Let's Book a table</p>
+                        <div class="gap-1 d-flex d-sm-none text-center align-items-center justify-content-center extra">
+                            <a href="orderpage.html" class="btn button rounded-pill animate__animated animate__backInLeft"
+                                style="color:white;border:2px solid #CDA45E;">Order Now</a>
+                            <a href="#book-online" class="btn button rounded-pill animate__animated animate__backInRight"
+                                style="color:white;border:2px solid #CDA45E;">Book Table</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <main id="main">
+        <section id="about" class="about">
+            <div class="container aos-init aos-animate" data-aos="fade-up">
+                <div class="row">
+                    <div class="col-lg-6 order-1 order-lg-2">
+                        <div class="about-img">
+                            <img src="aboutimg.jpeg" alt="no" class="img-fluid">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 order-2 order-lg-1 pt-4 pt-lg-0 about-para">
+                        <p class="text-warning">
+                            There is a lot that goes into creating a great, fluffy, and delicious pizza. We have gone
+                            the extra mile to craft a square pizza that serves 22% more for our extraordinary young
+                            Indians. Our pizzas are made fresh, using locally sourced ingredients, ensuring a reduced
+                            carbon footprint with zero frozen trucks on the move. So, the next time you’re craving some
+                            truly exceptional pizza, make sure to visit BOCS outlet – because we have all the right
+                            ingredients for a memorable experience!
+                        </p>
+                        <ul>
+                            <li>
+                                <p><i class="bi bi-chevron-double-right about-para-icon"></i> <i class="text-warning">
+                                        &nbsp;Delicious</i></p>
+                            </li>
+                            <li>
+                                <p><i class="bi bi-chevron-double-right about-para-icon"></i> <i class="text-warning">
+                                        &nbsp;Awesome Taste</i></p>
+                            </li>
+                            <li>
+                                <p><i class="bi bi-chevron-double-right about-para-icon"></i> <i class="text-warning">
+                                        &nbsp;Excellet Place to taste</i></p>
+                            </li>
+                            <li>
+                                <p><i class="bi bi-chevron-double-right about-para-icon"></i> <i class="text-warning">
+                                        &nbsp;Melting spices</i></p>
+                            </li>
+                            <li>
+                                <p><i class="bi bi-chevron-double-right about-para-icon"></i> <i class="text-warning">
+                                        &nbsp;Authentic Italian pizza</i></p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="our-specials">
+            <div class="container p-3 aos-init aos-animate" data-aos="fade-up">
+                <h4 class="text-center"
+                    style="font-family: Pacifico, cursive;font-size: 20px;font-weight: 400;line-height: 20px;color:#FD9D3E">
+                    Fresh From <i>BOX PIZZA</i></h4>
+                <h1 class="text-center aos-init aos-animate" data-aos="fade-up">OUR SPECIALITY</h1>
+                <div class="row">
+                    <div class="col-xl-4 col-lg-4 col-md-4 special">
+                        <div class="text-center aos-init aos-animate" data-aos="fade-left"><img src="speciality-1.jpg"
+                                alt="no" class="img-fluid our-special-img" style="border-radius: 50%;"></div>
+                        <h4 class="text-center mt-5"><a href="#" class="special-text text-decoration-none">MEXICAN GREEN
+                                WAVE</a></h4>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-4 special">
+                        <div class="text-center aos-init aos-animate" data-aos="fade-left"><img src="speciality-2.jpg"
+                                alt="no" class="img-fluid our-special-img" style="border-radius: 50%;"></div>
+                        <h4 class="text-center mt-5"><a href="#" class="special-text text-decoration-none">DOUBLE CHEESE
+                                PIZZA</a></h4>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-4 special">
+                        <div class="text-center aos-init aos-animate" data-aos="fade-left"><img src="speciality-3.jpg"
+                                alt="no" class="img-fluid our-special-img" style="border-radius: 50%;"></div>
+                        <h4 class="text-center mt-5"><a href="#" class="special-text text-decoration-none">MARGHERITA
+                                PIZZA</h4></a>
+                    </div>
+                </div>
+                <div class="d-flex align-items-center justify-content-center mt-5 mb-5">
+                    <a href="orderpage.html"><button type="button" class="text-center view rounded-pill"
+                            style="border: 2px solid #fd9d3e;width: 200px;height: 50px;">For Orders</button></a>
+                </div>
+            </div>
+        </section>
+        <section class="menu" id="menu">
+            <!-- title -->
+            <div class="container-fluid p-0">
+                <div class="menu-top-bg">
+                    <img src="menu-top-bg.png" alt="#" class="img-fluid">
+                </div>
+            </div>
+            <!-- filter buttons -->
+            <div class="container">
+                <div class="row mt-5">
+                    <div class="col-xl-12 col-lg-12 col-md-12">
+                        <h4 class="text-center aos-init aos-animate"
+                            style="font-family: Pacifico, cursive;font-size: 20px;font-weight: 400;line-height: 20px;color:#FD9D3E;"
+                            data-aos="fade-down">Fresh From <i>BOX PIZZA</i></h4>
+                        <h1 class="text-center text-light aos-init aos-animate" data-aos="fade-up">OUR SPECIAL MENU</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xl-12 col-lg-12 col-md-12">
+                        <div class="special-tab text-center wow fadeInUp animated" style="visibility: visible;">
+                            <ul class="btn-container">
+                                <li class="filter-btn animate__flipInX" type="button" data-id="all">
+                                    All
+                                </li>
+                                <li class="filter-btn animate__flipInX" type="button" data-id="breakfast">
+                                    breakfast
+                                </li>
+                                <li class="filter-btn animate__flipInX" type="button" data-id="lunch">
+                                    lunch
+                                </li>
+                                <li class="filter-btn animate__flipInX" type="button" data-id="shakes">
+                                    shakes
+                                </li>
+                                <li class="filter-btn animate__flipInX" type="button" data-id="dinner">
+                                    dinner
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-content" style="visibility: visible;">
+                    <!-- menu items -->
+                    <div class="section-center">
+                        <div class="row our-menu-panel tab-pane fade in show d-flex gy-2">
+                            <div class="col-sm-6 col-md-4 col-lg-3 col-12 text-center menu-box aos-init aos-animate"
+                                data-aos="fade-up">
+                                <article class="menu-item">
+                                    <img src="menu-1.png" class="img-fluid menu-image" alt="s">
+                                    <div class="item-info">
+                                        <header
+                                            class="d-grid flex-column mt-5 justify-content-center align-items-center">
+                                            <h4>Margherita pizza</h4>
+                                            <h4 class="price">180</h4>
+                                        </header>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="col-sm-6 col-md-4 col-lg-3 col-12 text-center menu-box aos-init aos-animate"
+                                data-aos="fade-up">
+                                <article class="menu-item">
+                                    <img src="menu-3.png" class="img-fluid menu-image" alt="s">
+                                    <div class="item-info">
+                                        <header
+                                            class="d-grid flex-column mt-5 justify-content-center align-items-center">
+                                            <h4>Rum With Soda</h4>
+                                            <h4 class="price">80</h4>
+                                        </header>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="col-sm-6 col-md-4 col-lg-3 col-12 text-center menu-box aos-init aos-animate"
+                                data-aos="fade-up">
+                                <article class="menu-item">
+                                    <img src="milkychock.png" class="img-fluid menu-image" alt="s">
+                                    <div class="item-info">
+                                        <header
+                                            class="d-grid flex-column mt-5 justify-content-center align-items-center">
+                                            <h4>godzilla milkshake</h4>
+                                            <h4 class="price">100</h4>
+                                        </header>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="col-sm-6 col-md-4 col-lg-3 col-12 text-center menu-box aos-init aos-animate"
+                                data-aos="fade-up">
+                                <article class="menu-item">
+                                    <img src="pizza-png-15.png" class="img-fluid menu-image" alt="s">
+                                    <div class="item-info">
+                                        <header
+                                            class="d-grid flex-column mt-5 justify-content-center align-items-center">
+                                            <h4>Veg Pizza</h4>
+                                            <h4 class="price">120</h4>
+                                        </header>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="col-sm-6 col-md-4 col-lg-3 col-12 text-center menu-box aos-init aos-animate"
+                                data-aos="fade-up">
+                                <article class="menu-item">
+                                    <img src="menu-6.png" class="img-fluid menu-image" alt="s">
+                                    <div class="item-info">
+                                        <header
+                                            class="d-grid flex-column mt-5 justify-content-center align-items-center">
+                                            <h4>Chilly Pizza</h4>
+                                            <h4 class="price">200</h4>
+                                        </header>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="col-sm-6 col-md-4 col-lg-3 col-12 text-center menu-box aos-init aos-animate"
+                                data-aos="fade-up">
+                                <article class="menu-item">
+                                    <img src="oreo.png" class="img-fluid menu-image" alt="s">
+                                    <div class="item-info">
+                                        <header
+                                            class="d-grid flex-column mt-5 justify-content-center align-items-center">
+                                            <h4>Oreo dream cake</h4>
+                                            <h4 class="price">500</h4>
+                                        </header>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="col-sm-6 col-md-4 col-lg-3 col-12 text-center menu-box aos-init aos-animate"
+                                data-aos="fade-up">
+                                <article class="menu-item">
+                                    <img src="menu-8.png" class="img-fluid menu-image" alt="s">
+                                    <div class="item-info">
+                                        <header
+                                            class="d-grid flex-column mt-5 justify-content-center align-items-center">
+                                            <h4>Bacon overflow</h4>
+                                            <h4 class="price">200</h4>
+                                        </header>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="col-sm-6 col-md-4 col-lg-3 col-12 text-center menu-box aos-init aos-animate"
+                                data-aos="fade-up">
+                                <article class="menu-item">
+                                    <img src="menu-5.png" class="img-fluid menu-image" alt="s">
+                                    <div class="item-info">
+                                        <header
+                                            class="d-grid flex-column mt-5 justify-content-center align-items-center">
+                                            <h4>American classic Salad</h4><br>
+                                            <h4 class="price">250</h4>
+                                        </header>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="col-sm-6 col-md-4 col-lg-3 col-12 text-strat menu-box aos-init aos-animate"
+                                data-aos="fade-up">
+                                <article class="menu-item">
+                                    <img src="menu-1.png" class="img-fluid menu-image" alt="s">
+                                    <div class="item-info">
+                                        <header
+                                            class="d-grid flex-column mt-5 justify-content-center align-items-center">
+                                            <h4>quarantine buddy</h4>
+                                            <h4 class="price">$16.99</h4>
+                                        </header>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="col-sm-6 col-md-4 col-lg-3 col-12 text-center menu-box aos-init aos-animate"
+                                data-aos="fade-up">
+                                <article class="menu-item">
+                                    <img src="vegpasta.png" class="img-fluid menu-image" alt="s">
+                                    <div class="item-info">
+                                        <header
+                                            class="d-grid flex-column mt-5 justify-content-center align-items-center">
+                                            <h4>Veg Pasta</h4>
+                                            <h4 class="price">240</h4>
+                                        </header>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="col-sm-6 col-md-4 col-lg-3 col-12 text-center menu-box aos-init aos-animate"
+                                data-aos="fade-up">
+                                <article class="menu-item">
+                                    <img src="chrice.png" class="img-fluid menu-image" alt="s">
+                                    <div class="item-info">
+                                        <header
+                                            class="d-grid flex-column mt-5 justify-content-center align-items-center">
+                                            <h4>Chicken Rice</h4>
+                                            <h4 class="price">220</h4>
+                                        </header>
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="col-sm-6 col-md-4 col-lg-3 col-12 text-center menu-box aos-init aos-animate"
+                                data-aos="fade-up">
+                                <article class="menu-item">
+                                    <img src="kitkat.png" class="img-fluid menu-image" alt="s">
+                                    <div class="item-info">
+                                        <header
+                                            class="d-grid flex-column mt-5 justify-content-center align-items-center">
+                                            <h4>Kitkat Shake</h4>
+                                            <h4 class="price">120</h4>
+                                        </header>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="order-section ord p-5">
+            <!-- <div class="order-top" style="margin-top:-120px;position: relative;visibility: visible;">
+                <img src="order-top.png" class="img-fluid" alt="n">
+            </div> -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-4 col-lg-4 col-md-4 service-box text-center wow fadeInUp animated aos-init aos-animate"
+                        data-aos="fade-right" style="visibility: visible;">
+                        <img src="order-1.svg" class="img-fluid" style="width: 100px;" alt="n">
+                        <h2 class="order-title text-uppercase">Order your food</h2>
+                        <p class="order-desc">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eius-Lorem ipsum dolor sit
+                            amet, consectetur adipisicing elit, sed do eius-Lorem ipsum dolor sit amet, consectetur
+                            adipisicing elit, sed do eius-
+                        </p>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-4 service-box text-center wow fadeInUp animated aos-init aos-animate"
+                        data-aos="fade-down" style="visibility: visible;">
+                        <img src="order-2.svg" class="img-fluid" style="width: 100px;" alt="n">
+                        <h2 class="order-title text-uppercase">delivery or pickup</h2>
+                        <p class="order-desc">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eius-Lorem ipsum dolor sit
+                            amet, consectetur adipisicing elit, sed do eius-Lorem ipsum dolor sit amet, consectetur
+                            adipisicing elit, sed do eius-
+                        </p>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-4 service-box text-center aos-init aos-animate"
+                        data-aos="fade-left" style="visibility: visible;">
+                        <img src="order-3.svg" class="img-fluid" style="width: 100px;" alt="n">
+                        <h2 class="order-title text-uppercase">delicious receipe</h2>
+                        <p class="order-desc">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eius-Lorem ipsum dolor sit
+                            amet, consectetur adipisicing elit, sed do eius-Lorem ipsum dolor sit amet, consectetur
+                            adipisicing elit, sed do eius-
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="book-online" id="book-online">
+            <div class="container mt-5 p-5">
+                <div class="row">
+                    <div class="col-md-6 text-center">
+                        <h4 class="text-center aos-init aos-animate" data-aos="fade-up"
+                            style="font-family: Pacifico, cursive;font-size: 20px;font-weight: 400;line-height: 20px;color:#FD9D3E;"
+                            data-aos="fade-down">Fresh From <i>BOX PIZZA</i></h4>
+                        <h1 class="text-center text-dark aos-init aos-animate" data-aos="fade-up"
+                            style="font-size: 70px;">BOOK ONLINE</h1>
+                        <p class="text-center">
+                            Sit amet, consectetur adipiscing elit quisque eget maximus velit, non eleifend libero
+                            curabitur dapibus mauris sed leo cursus aliquetcras suscipit. Sit amet, consectetur
+                            adipiscing elit quisque eget maximus velit, non eleifend libero curabitur
+                        </p>
+                        <div class="d-flex align-items-center justify-content-center">
+                            <div class="online-call bg-dark p-1">
+                                <img src="online-call.png" alt="n" class="img-fluid bg-dark">
+                                <a href="#" class="text-decoration-none px-1 text-light">
+                                    + 91 123 456 789 0
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 text-center p-5">
+                        <form action="" class="online-form aos-init aos-animate" data-aos="fade-up">
+                            <div class="form-group form-floating">
+                                <input type="text" class="form-control" id="name" placeholder="Name">
+                                <label for="name">Name</label>
+                            </div>
+                            <div class="form-group form-floating">
+                                <input type="text" class="form-control" id="email" placeholder="Email">
+                                <label for="email">Email</label>
+                            </div>
+                            <div class="form-group form-floating">
+                                <input type="text" class="form-control" id="phone" placeholder="Mobile no">
+                                <label for="phone">Mobile Number</label>
+                            </div>
+                            <div class="form-group form-floating">
+                                <input type="number" class="form-control" id="number" placeholder="No of Persons">
+                                <label for="phone">No of Persons</label>
+                            </div>
+                            <div class="form-group form-floating">
+                                <input type="date" class="form-control" id="date" placeholder="Date">
+                                <label for="date">Date</label>
+                            </div>
+                            <button type="submit" class="book-btn">book now</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="customer-review" id="customer-review">
+            <div class="container">
+                <div class="customer">
+                    <div class="headding-part text-center mt-3">
+                        <p class="headding-sub aos-init aos-animate" data-aos="fade-down" style="visibility: visible;">
+                            What Says Our Clients</p>
+                        <h2 class="headding-title text-uppercase fw-bold aos-init aos-animate" data-aos="fade-down"
+                            style="visibility: visible;">Customer Reviews</h2>
+                    </div>
+                    <div class="row d-flex justify-content-sm-around mt-2">
+                        <div class="col-xl-3 col-lg-4 col-md-6 bg-dark cust-box animate__animated"
+                            style="margin-bottom: 30px;border: 5px solid #FD9D3E;
+                        border-top:5px solid #FD9D3E;border-bottom:5px solid #FD9D3E;border-left: 5px solid #FD9D3E;border-right: 5px solid #FD9D3E;box-shadow: 2px 2px 10px #fd9d3e;border-radius: 50px;">
+                            <img src="men6.jpeg" alt="Not" class="float-start mt-5"
+                                style="border-radius: 50%;width: 100px;height: 100px;">
+                            <div class="mt-5 text-light text-center">
+                                <h3>John</h3>
+                                <h4>Entrepreneur</h4>
+                                <div class="text-center">
+                                    <i class="bi bi-star-fill" style="color:rgb(205, 205, 6)"></i>
+                                    <i class="bi bi-star-fill" style="color:rgb(205, 205, 6)"></i>
+                                    <i class="bi bi-star-fill" style="color:rgb(205, 205, 6)"></i>
+                                    <i class="bi bi-star-fill" style="color:rgb(205, 205, 6)"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </div>
+                            </div>
+                            <p class="text-light">
+                                <i class="bi bi-quote quote-icon-left fs-2" style="color:#008374"></i>
+                                Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat
+                                minim
+                                velit minim dolor enim duis veniam ipsum anim magna sunt elit.
+                                <i class="bi bi-quote quote-icon-right fs-2" style="color:#008374"></i>
+                            </p>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6 bg-dark cust-box"
+                            style="margin-bottom: 30px;border: 5px solid #FD9D3E;
+                        border-top:5px solid #FD9D3E;border-bottom:5px solid #FD9D3E;border-left: 5px solid #FD9D3E;border-right: 5px solid #FD9D3E;box-shadow: 2px 2px 10px #fd9d3e;border-radius: 50px;">
+                            <img src="men2.jpeg" alt="Not" class="float-start mt-5"
+                                style="border-radius: 50%;width: 100px;height: 100px;">
+                            <div class="mt-5 text-light text-center text-md-end">
+                                <h3>Goodman</h3>
+                                <h4>Founder</h4>
+                                <div class="text-center">
+                                    <i class="bi bi-star-fill" style="color:rgb(205, 205, 6)"></i>
+                                    <i class="bi bi-star-fill" style="color:rgb(205, 205, 6)"></i>
+                                    <i class="bi bi-star-fill" style="color:rgb(205, 205, 6)"></i>
+                                    <i class="bi bi-star-fill" style="color:rgb(205, 205, 6)"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </div>
+                            </div>
+                            <p class="text-light">
+                                <i class="bi bi-quote quote-icon-left fs-2" style="color:#008374"></i>
+                                Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat
+                                minim
+                                velit minim dolor enim duis veniam ipsum anim magna sunt elit.
+                                <i class="bi bi-quote quote-icon-right fs-2" style="color:#008374"></i>
+                            </p>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 col-md-6 bg-dark cust-box"
+                            style="margin-bottom: 30px;border: 5px solid #FD9D3E;
+                        border-top:5px solid #FD9D3E;border-bottom:5px solid #FD9D3E;border-left: 5px solid #FD9D3E;border-right: 5px solid #FD9D3E;box-shadow: 2px 2px 10px #fd9d3e;border-radius: 50px;">
+                            <img src="men5.jpeg" alt="Not" class="float-start mt-5"
+                                style="border-radius: 50%;width: 100px;height: 100px;">
+                            <div class="mt-5 text-light text-center text-md-end">
+                                <h3>Jena Karlis</h3>
+                                <h4>Store Owner</h4>
+                                <div class="text-center">
+                                    <i class="bi bi-star-fill" style="color:rgb(205, 205, 6)"></i>
+                                    <i class="bi bi-star-fill" style="color:rgb(205, 205, 6)"></i>
+                                    <i class="bi bi-star-fill" style="color:rgb(205, 205, 6)"></i>
+                                    <i class="bi bi-star-fill" style="color:rgb(205, 205, 6)"></i>
+                                    <i class="bi bi-star-fill" style="color:rgb(205, 205, 6)"></i>
+                                </div>
+                            </div>
+                            <p class="text-light">
+                                <i class="bi bi-quote quote-icon-left fs-2" style="color:#008374"></i>
+                                Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat
+                                minim
+                                velit minim dolor enim duis veniam ipsum anim magna sunt elit.
+                                <i class="bi bi-quote quote-icon-right fs-2" style="color:#008374"></i>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="numbers" class="numbers" style="visibility: visible;background-color: red;color:yellow;">
+            <div class="container">
+                <div class="w-100 shadow-none text-center">
+                    <div
+                        class="row mt-md-5 mt-2 mb-md-5 mb-2 d-flex align-items-center justify-content-center box-wrap">
+                        <div class="col-md-3 col-sm-6 col-lg-3 col-6"
+                            style="visibility: visible; animation-duration: 1200ms; animation-name: fadeInUp;">
+                            <div class="box w-100">
+                                <!-- d-md-grid d-flex align-items-center justify-content-center gap-2 -->
+                                <h2 class="mb-0"><span class="count" data-target="20">0</span><sup>+</sup></h2>
+                                <h4 class="mb-0">Years of Pizza Making</h4>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-lg-3 col-6 counter-section wow fadeInUp animated"
+                            style="visibility: visible; animation-duration: 600ms; animation-name: fadeInUp;">
+                            <div class="box w-100">
+                                <!-- d-md-grid d-flex align-items-center justify-content-center gap-2 -->
+                                <h2 class="mb-0"><span class="count1" data-target="200">0</span><sup>k</sup></h2>
+                                <h4 class="mb-0 counter-title">Happy Customers</h4>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-lg-3 col-6 counter-section wow fadeInUp animated"
+                            style="visibility: visible; animation-duration: 900ms; animation-name: fadeInUp;">
+                            <div class="box w-100">
+                                <!-- d-md-grid d-flex align-items-center justify-content-center gap-2 -->
+                                <h2 class="mt-2"><span class="count2" data-target="2000">0</span><sup>+</sup></h2>
+                                <h4>Successfull Deliveries</h4>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6 col-lg-3 col-6 counter-section wow fadeInUp animated"
+                            style="visibility: visible; animation-duration: 1200ms; animation-name: fadeInUp;">
+                            <div class="box w-100">
+                                <!-- d-md-grid d-flex align-items-center justify-content-center gap-2 -->
+                                <h2 class="mb-0"><span class="count3" data-target="200">0</span><sup>+</sup></h2>
+                                <h4 class="mb-0">Branches</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="about-us" id="about-us">
+            <div class="container">
+                <div class="row p-3">
+                    <div
+                        class="col-xl-6 col-lg-6 col-md-6 d-flex justify-content-center align-items-center order-2 order-md-1">
+                        <div class="about-head">
+                            <h4 class="text-center text-md-start aos-init aos-animate"
+                                style="font-family: Pacifico, cursive;font-size: 30px;font-weight: 400;line-height: 20px;color:#FD9D3E;"
+                                data-aos="fade-down">Delicious Restaurant</h4>
+                            <h1 class="text-center text-md-start aos-init aos-animate text-dark" data-aos="fade-up"
+                                style="font-size: 50px;">ABOUT <i>BOX PIZZA</i></h1>
+                            <p class="text-center text-md-start">
+                                Nestled in the heart of downtown, "BOX PIZZA" is a local gem among pizza
+                                restaurants. With its warm and rustic decor, this charming eatery exudes an inviting
+                                atmosphere that immediately puts patrons at ease. The aroma of freshly baked pizzas
+                                wafts from the open kitchen, enticing diners with promises of mouthwatering delight.
+                                Mamma Mia prides itself on offering a diverse menu, showcasing both traditional and
+                                inventive pizza creations. From the classic Margherita, featuring San Marzano tomatoes
+                                and fresh basil, to their signature "Tuscan Truffle Delight" with truffle oil, wild
+                                mushrooms, and a crispy thin crust, there's a pizza to satisfy every palate. 
+                            </p>
+                        </div>
+                    </div>
+                    <div
+                        class="col-xl-6 col-lg-6 col-md-6 justify-content-center align-items-center d-flex order-1 order-md-2">
+                        <img src="about-pizzon.png" alt="#" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="footer" id="footer">
+            <div class="container">
+                <footer style="border-bottom: 2px solid gray;">
+                    <div class="row d-flex align-items-center justify-content-center text-start mt-5 mb-5">
+                        <div class="col-lg-4 col-md-12 text-light">
+                            <div class="foot-content">
+                                <h1 style="font-family:Verdana, Geneva, Tahoma, sans-serif" class="pizzon">
+                                    <strong><i>BOX
+                                            PIZZA</i></strong>
+                                </h1>
+                            </div>
+                            <div class="mt-3">
+                                <address class="foot-content">
+                                    <i class="bi bi-geo-alt-fill" style="color: #CDA45E;"></i>&nbsp; 130, <i>BOX
+                                        PIZZA</i>,
+                                    Kalavasal, Madurai-05.
+                                </address>
+                                <p class="foot-content"><i class="bi bi-telephone-plus" style="color: #CDA45E;"></i>&nbsp; PHONE - +91 123
+                                    456
+                                    789 0</p>
+                                <p class="foot-content"><i class="bi bi-envelope" style="color: #CDA45E;"></i>&nbsp; EMAIL - info@gmail.com
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-12 text-start text-light">
+                            <div class="foot-content">
+                                <h2><strong>OPENING HOURS</strong></h2>
+                            </div>
+                            <div class="mt-3">
+                                <p class="foot-content">Mon - Fri :6.00 am - 10.00 pm</p>
+                                <p class="foot-content">Saturday :6.00 am - 9.00 pm</p>
+                                <p class="foot-content">Sunday : <span class="border-none bg-warning" style="padding: 10px;">Closed</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-12 text-start text-light">
+                            <div class="foot-content">
+                                <h3><strong>USEFUL LINKS</strong></h3>
+                            </div>
+                            <div class="mt-3">
+                                <p class="foot-content">About</p>
+                                <p class="foot-content">Contact Us</p>
+                                <p class="foot-content">Wishlist</p>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+                <div class="d-flex align-items-center justify-content-center justify-content-md-between mt-5">
+                    <div class="text-light align-self-center">
+                        <p>© <i class="pizza">BOX PIZZA</i> all Rights Reserved.</p>
+                    </div>
+                    <div class="text-light foot-i mb-5 d-flex align-items-center justify-content-center">
+                        <i class="bi bi-facebook foot-icon"></i>
+                        <i class="bi bi-twitter foot-icon ms-3"></i>
+                        <i class="bi bi-linkedin foot-icon ms-3"></i>
+                        <i class="bi bi-whatsapp foot-icon ms-3"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script>
+        AOS.init({
+            duration: 1000, // Animation duration in milliseconds
+            offset: 200,   // Offset (in pixels) from the top of the page
+        });
+        // Number counter Animation
+        const counter = document.querySelector(".count");
+        const target = parseInt(counter.getAttribute("data-target"));
+        const increment = Math.ceil(target / 100); // Adjust the speed of the animation by changing the denominator
+
+        let count = 0;
+
+        const updateCount = () => {
+            count += increment;
+            if (count < target) {
+                counter.textContent = count;
+                setTimeout(updateCount, 20); // Adjust the timing of the animation
+            } else {
+                counter.textContent = target;
+            }
+        };
+
+        updateCount();
+        const counter1 = document.querySelector(".count1");
+        const target1 = parseInt(counter1.getAttribute("data-target"));
+        const increment1 = Math.ceil(target1 / 100); // Adjust the speed of the animation by changing the denominator
+
+        let count1 = 0;
+
+        const updateCount1 = () => {
+            count1 += increment1;
+            if (count1 < target1) {
+                counter1.textContent = count1;
+                setTimeout(updateCount1, 20); // Adjust the timing of the animation
+            } else {
+                counter1.textContent = target1;
+            }
+        };
+
+        updateCount1();
+        const counter2 = document.querySelector(".count2");
+        const target2 = parseInt(counter2.getAttribute("data-target"));
+        const increment2 = Math.ceil(target2 / 100); // Adjust the speed of the animation by changing the denominator
+
+        let count2 = 0;
+
+        const updateCount2 = () => {
+            count2 += increment2;
+            if (count2 < target2) {
+                counter2.textContent = count2;
+                setTimeout(updateCount2, 20); // Adjust the timing of the animation
+            } else {
+                counter2.textContent = target2;
+            }
+        };
+
+        updateCount2();
+        const counter3 = document.querySelector(".count3");
+        const target3 = parseInt(counter3.getAttribute("data-target"));
+        const increment3 = Math.ceil(target3 / 100); // Adjust the speed of the animation by changing the denominator
+
+        let count3 = 0;
+
+        const updateCount3 = () => {
+            count3 += increment3;
+            if (count3 < target3) {
+                counter3.textContent = count3;
+                setTimeout(updateCount3, 20); // Adjust the timing of the animation
+            } else {
+                counter3.textContent = target3;
+            }
+        };
+
+        updateCount3();
+
+        // get only unique categories - HARDEST ONE
+        // iterate over categories return buttons
+        // make sure to select buttons when they are available
+
+        // items
+        const menu = [
+            {
+                id: 1,
+                title: "Margherita pizza",
+                category: "breakfast",
+                price: 180,
+                img: "menu-1.png",
+                // desc: `I'm baby woke mlkshk wolf bitters live-edge blue bottle, hammock freegan `,
+            },
+            {
+                id: 2,
+                title: "Rum With Soda",
+                category: "shakes",
+                price: 80,
+                img: "menu-3.png",
+                // desc: `vaporware iPhone mumblecore selvage raw denim slow-carb leggings gochujang helvetica man braid jianbing. Marfa thundercats `,
+            },
+            {
+                id: 3,
+                title: "godzilla milkshake",
+                category: "shakes",
+                price: 100,
+                img: "milkychock.png",
+                // desc: `ombucha chillwave fanny pack 3 wolf moon street art photo booth before they sold out organic viral.`,
+            },
+            {
+                id: 4,
+                title: "Veg Pizza",
+                category: "lunch",
+                price: 120,
+                img: "pizza-png-15.png",
+                // desc: `Shabby chic keffiyeh neutra snackwave pork belly shoreditch. Prism austin mlkshk truffaut, `,
+            },
+            {
+                id: 5,
+                title: "Chilly Pizza",
+                category: "lunch",
+                price: 200,
+                img: "menu-6.png",
+                // desc: `franzen vegan pabst bicycle rights kickstarter pinterest meditation farm-to-table 90's pop-up `,
+            },
+            {
+                id: 6,
+                title: "Oreo dream cake",
+                category: "breakfast",
+                price: 500,
+                img: "oreo.png",
+                // desc: `Portland chicharrones ethical edison bulb, palo santo craft beer chia heirloom iPhone everyday`,
+            },
+            {
+                id: 7,
+                title: "Bacon overflow",
+                category: "dinner",
+                price: 250,
+                img: "menu-8.png",
+                // desc: `carry jianbing normcore freegan. Viral single-origin coffee live-edge, pork belly cloud bread iceland put a bird `,
+            },
+            {
+                id: 8,
+                title: "American classic Salad",
+                category: "lunch",
+                price: 300,
+                img: "menu-5.png",
+                // desc: `on it tumblr kickstarter thundercats migas everyday carry squid palo santo leggings. Food truck truffaut  `,
+            },
+            {
+                id: 9,
+                title: "Cookies",
+                category: "breakfast",
+                price: 100,
+                img: "menu-2.png",
+                // desc: `skateboard fam synth authentic semiotics. Live-edge lyft af, edison bulb yuccie crucifix microdosing.`,
+            },
+            {
+                id: 10,
+                title: "Veg Pasta",
+                category: "dinner",
+                price: 240,
+                img: "vegpasta.png",
+                // desc: `skateboard fam synth authentic semiotics. Live-edge lyft af, edison bulb yuccie crucifix microdosing.`,
+            },
+            {
+                id: 11,
+                title: "Chicken Rice",
+                category: "dinner",
+                price: 220,
+                img: "chrice.png",
+                // desc: `skateboard fam synth authentic semiotics. Live-edge lyft af, edison bulb yuccie crucifix microdosing.`,
+            },
+            {
+                id: 12,
+                title: "Kitkat Shake",
+                category: "shakes",
+                price: 120,
+                img: "kitkat.png",
+                // desc: `skateboard fam synth authentic semiotics. Live-edge lyft af, edison bulb yuccie crucifix microdosing.`,
+            },
+        ];
+
+        const sectionCenter = document.querySelector(".section-center");
+        const container = document.querySelector(".btn-container");
+
+        // load items
+        window.addEventListener("DOMContentLoaded", function () {
+            displayMenuItems(menu);
+            displayMenuButtons();
+        });
+
+        function displayMenuItems(menuItems) {
+            let displayMenu = menuItems.map(function (item) {
+                // console.log(item);
+
+                return `<div class="col-sm-6 col-md-4 col-lg-3 col-12 text-center menu-box">
+        <article class="menu-item">
+  <img src=${item.img} class="img-fluid menu-image" alt=${item.title} />
+  <div class="item-info">
+    <header class="d-flex flex-column mt-5 justify-content-center align-items-center">
+      <h4>${item.title}</h4>
+      <h4 class="price">Rs.${item.price}</h4>
+    </header>
+  </div>
+</article>
+</div>`;
+                // <p class="item-text">
+                //       ${item.desc}
+                //     </p>
+            });
+            displayMenu = displayMenu.join("");
+
+            sectionCenter.innerHTML = displayMenu;
+        }
+
+        function displayMenuButtons() {
+            const categories = menu.reduce(
+                function (values, item) {
+                    if (!values.includes(item.category)) {
+                        values.push(item.category);
+                    }
+                    return values;
+                },
+                ["all"]
+            );
+            const categoryBtns = categories
+                .map(function (category) {
+                    return `<button class="filter-btn" type="button" data-id=${category}>
+${category}
+</button>`;
+                })
+                .join("");
+            container.innerHTML = categoryBtns;
+            const filterBtns = container.querySelectorAll(".filter-btn");
+            // filter items
+            filterBtns.forEach(function (btn) {
+                btn.addEventListener("click", function (e) {
+                    const category = e.currentTarget.dataset.id;
+                    const menuCategory = menu.filter(function (menuItem) {
+                        // console.log(menuItem.category);
+                        if (menuItem.category === category) {
+                            return menuItem;
+                        }
+                    });
+                    // console.log(menuCategory);
+                    if (category === "all") {
+                        displayMenuItems(menu);
+                    } else {
+                        displayMenuItems(menuCategory);
+                    }
+                });
+            });
+        }
+    </script>
+</body>
+
+</html>
